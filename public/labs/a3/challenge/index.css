@@ -140,6 +140,7 @@
     top: 0px;
     animation-duration: 7s;
     animation-name: slidein-infinite;
+    animation-direction: alternate;
     animation-iteration-count: infinite;
     width: 200px;
     height: 200px;
@@ -170,50 +171,6 @@
     }
 
     to {
-        position: relative;
-        top: 0px;
-        font-size: 100%;
-        margin-left: 0%;
-        width: 200px;
-        height: 200px;
-        background-color: red;
-        color: white;
-    }
-}
-.animation-keyframes-alternate {
-    position: relative;
-    top: 0px;
-    animation-duration: 7s;
-    animation-name: slidein-alternate;
-    animation-direction: alternate;
-    width: 200px;
-    height: 200px;
-    background-color: red;
-    color: white;
-}
-
-@keyframes slidein-alternate {
-    0% {
-        position: relative;
-        top: 0px;
-        font-size: 100%;
-        margin-left: 100%;
-        width: 200px;
-        height: 200px;
-        background-color: yellow;
-        color: black;
-    }
-    50% {
-        position: relative;
-        top: -200px;
-        font-size: 300%;
-        margin-left: 25%;
-        width: 400px;
-        height: 400px;
-        background-color: blue;
-        color: white;
-    }
-    100% {
         position: relative;
         top: 0px;
         font-size: 100%;
@@ -315,7 +272,7 @@
     }
 }
 @media (min-width: 600px) and (max-width: 750px) {
-    body {
+    p {
         background-color: pink;
     }
     .media-query {
@@ -324,7 +281,7 @@
     }
 }
 @media (min-width: 750px) and (max-width: 900px) {
-    body {
+    h3 {
         background-color: blue;
     }
     .media-query {
@@ -344,7 +301,7 @@
     }
 }
 @media (min-width:1050px) and (max-width: 1200px) {
-    body {
+    h2 {
         background-color: yellow;
     }
     .media-query {
@@ -353,7 +310,7 @@
     }
 }
 @media (min-width:1200px) and (max-width: 1500px) {
-    body {
+    div {
         background-color: cyan;
     }
     .media-query {
