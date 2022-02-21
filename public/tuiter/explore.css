@@ -1,15 +1,15 @@
 .wd-fg-color-black { color: black; }
 .wd-fg-color-white { color: white; }
-.wd-fg-color-blue { color: royalblue; }
+.wd-fg-color-blue { color: blue; }
 .wd-fg-color-red { color: #ff7070; }
 .wd-fg-color-green { color: green; }
 .wd-fg-color-light-gray { color: rgb(110, 118, 125); }
 .wd-bg-color-yellow
 { background-color: #ffff07; }
-.wd-bg-color-gray
+.wd-bg-color-black-twitter
 { background-color: #14171A; }
 .wd-bg-color-blue
-{ background-color:royalblue; }
+{ background-color:blue; }
 .wd-bg-color-black
 { background-color:black; }
 .wd-bg-color-red
@@ -23,7 +23,7 @@
 .wd-border-dashed { border-style: dashed; }
 .wd-border-yellow { border-color: #ffff07; }
 .wd-border-red { border-color: #ff7070; }
-.wd-border-blue { border-color:royalblue; }
+.wd-border-blue { border-color:blue; }
 ::placeholder {
     font-size: 20px;
 }
@@ -61,4 +61,8 @@ input[type="text"], textarea {
 }
 .wd-rounded-borders {
     border-radius: 15px;
+}
+.custom-tab {
+    border-bottom: 6px solid blue !important;
+    border-radius: 6px !important;
 }
