@@ -1,15 +1,15 @@
 import React from "react";
-
+import "./explore.css";
 const ExploreComponent = () => {
         return(
             <>
                <div className="row">
                     <div className="form-group wd-search mb-1">
-                        <div className="input-group ps-1 pe-1">
+                        <div className="input-group">
                             <span className="fa fa-search ps-3 form-control-feedback" style={{color:"#657786", paddingTop: "10px"}}></span>
                             <input type="text" className="form-control rounded-pill small wd-bg-color-black-twitter border-0" placeholder="Search Tuiter">
                             </input>
-                            <span className="fa fa-cog wd-cogsize fa-inverse ps-2 pt-1" style={{color:"#2a9fd6"}}></span>
+                            <span className="fa fa-cog fa-inverse ps-2 pt-1" style={{color:"#2a9fd6", fontSize:"30px"}}></span>
                         </div>
                     </div>
                </div>
