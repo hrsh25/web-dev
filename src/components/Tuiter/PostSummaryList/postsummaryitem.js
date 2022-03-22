@@ -1,5 +1,5 @@
 import React from "react";
-
+import "../ExploreScreen/explore.css"
 const PostSummaryItem = ({post=
     {
         "topic": "Web Development",
