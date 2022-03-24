@@ -2,23 +2,86 @@ import HomeComponent from "./homecomponent";
 import Navigationsidebar from ".././NavigationSidebar";
 import PostList from ".././PostList";
 import PostSummaryList from "../PostSummaryList";
+import React from "react";
 const HomeScreen = () => {
     return (
         <>
+        <div className="d-block d-sm-none">
             <div className="row mt-2">
-                <div className="row mt-2">
-                    <div className="col-2 col-md-2 col-lg-1 col-xl-2">
-                        <Navigationsidebar activeParam="home"/>
-                    </div>
-                    <div className="col-10 col-md-10 col-lg-7 col-xl-6">
-                        <HomeComponent/>
-                    </div>
-                    <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                        <PostSummaryList/>
-                    </div>
+                <div className="col-2">
+                    <Navigationsidebar activeParam="explore" size="xs"/>
+                </div>
+                <div className="col-10"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
                 </div>
             </div>
-        </>
+        </div>
+        <div className="d-none d-sm-block d-md-none">
+            <div className="row mt-2">
+                <div className="col-2">
+                    <Navigationsidebar activeParam="explore" size="sm"/>
+                </div>
+                <div className="col-10"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
+                </div>
+            </div>
+        </div>
+        <div className="d-none d-md-block d-lg-none">
+            <div className="row mt-2">
+                <div className="col-2">
+                    <Navigationsidebar activeParam="explore" size="md"/>
+                </div>
+                <div className="col-10"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
+                </div>
+            </div>
+        </div>
+        <div className="d-none d-lg-block d-xl-none">
+            <div className="row mt-2">
+                <div className="col-1">
+                    <Navigationsidebar activeParam="explore" size="lg"/>
+                </div>
+                <div className="col-7"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
+                </div>
+                <div className="col-4">
+                    <PostSummaryList/>
+                </div>
+            </div>
+        </div>
+        <div className="d-none d-xl-block d-xxl-none">
+            <div className="row mt-2">
+                <div className="col-2">
+                    <Navigationsidebar activeParam="explore" size="xxl"/>
+                </div>
+                <div className="col-6"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
+                </div>
+                <div className="col-4">
+                    <PostSummaryList/>
+                </div>
+            </div>
+        </div>
+        <div className="d-none d-xxl-block">
+            <div className="row mt-2">
+                <div className="col-2">
+                    <Navigationsidebar activeParam="explore" size="xxl"/>
+                </div>
+                <div className="col-6"
+                     style={{"position": "relative"}}>
+                    <HomeComponent/>
+                </div>
+                <div className="col-4">
+                    <PostSummaryList/>
+                </div>
+            </div>
+        </div>
+    </>
     );
 };
 export default HomeScreen;
