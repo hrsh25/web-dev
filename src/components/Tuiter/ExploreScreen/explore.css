@@ -4,6 +4,7 @@
 .wd-fg-color-red { color: #ff7070; }
 .wd-fg-color-green { color: green; }
 .wd-fg-color-light-gray { color: rgb(110, 118, 125); }
+.wd-bg-color-light-gray {background-color: rgb(110, 118, 125);}
 .wd-bg-color-yellow
 { background-color: #ffff07; }
 .wd-bg-color-black-twitter

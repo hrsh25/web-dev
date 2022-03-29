@@ -5,7 +5,7 @@ const Navigationsidebar = (
     {
         activeParam, size
     }) => {
-        if (size==="xxl") {
+        if (size==="xxl" || size==="xl") {
             return (
                 <>
                     <div className="list-group">
@@ -30,9 +30,9 @@ const Navigationsidebar = (
                         <a className="list-group-item" href="/">
                             <i className="fas fa-list"></i> Lists
                         </a>
-                        <a className="list-group-item" href="/">
+                        <Link to="/tuiter/profile" className={`list-group-item ${activeParam === 'profile' ? 'active' :''}`}>
                             <i className="fas fa-user"></i> Profile
-                        </a>
+                        </Link>
                         <a className="list-group-item" href="/">
                             <i className="fas fa-circle"></i> More
                         </a>
@@ -70,9 +70,9 @@ const Navigationsidebar = (
                         <a className="list-group-item" href="/">
                             <i className="fas fa-list"></i>
                         </a>
-                        <a className="list-group-item" href="/">
+                        <Link to="/tuiter/profile" className={`list-group-item ${activeParam === 'profile' ? 'active' :''}`}>
                             <i className="fas fa-user"></i>
-                        </a>
+                        </Link>
                         <a className="list-group-item" href="/">
                             <i className="fas fa-circle"></i>
                         </a>

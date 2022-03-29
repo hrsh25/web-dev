@@ -5,6 +5,7 @@ import Styles from "./styles"
 import ConditionalOutput from "./conditional-output";
 import TodoItem from "./todo/todoitem"
 import TodoList from "./todo/todolist"
+import ReduxExamples from "./redux-examples"
 const Index = () => {
     return(
         <>
@@ -15,6 +16,7 @@ const Index = () => {
             <Link to="/tuiter/home">
                 Tuiter
             </Link>
+            <ReduxExamples/>
             <TodoList/>
             <TodoItem/>
             <ConditionalOutput/>

@@ -8,31 +8,36 @@ import Labs from "./components/Labs/index";
 import Index from "./components/Tuiter/index";
 import HomeScreen from "./components/Tuiter/HomeScreen/homescreen";
 import ExploreScreen from "./components/Tuiter/ExploreScreen/explorescreen"
+import Profile from "./components/Tuiter/Profile/index"
+import EditProfile from "./components/Tuiter/EditProfile"
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 function App() {
     return (
-        <BrowserRouter>
-            <div className="container">
-                <Routes>
-                    <Route path="/hello"
-                           exact={true}
-                           element={<HelloWorld/>}/>
-                    <Route path="/"
-                           exact={true}
-                           element={<Labs/>}/>
-                    <Route path="/tuiter"
-                           exact={true}
-                           element={<Index/>}/>
-                    <Route path="/tuiter/home"
-                           exact={true}
-                           element={<HomeScreen/>}/>
-                    <Route path="/tuiter/explore"
-                           exact={true}
-                           element={<ExploreScreen/>}/>
-                </Routes>
-            </div>
-        </BrowserRouter>
+            <BrowserRouter>
+                <div className="container">
+                    <Routes>
+                        <Route path="/">
+                            <Route index
+                                   element={<Labs/>}/>
+                            <Route path="hello"
+                                   element={<HelloWorld/>}/>
+                            <Route path="tuiter"
+                                   element={<Index/>}>
+                                <Route path = "home"
+                                       element = {<HomeScreen/>}/>
+                                <Route path = "explore"
+                                       element = {<ExploreScreen/>}/>
+                                <Route path = "profile"
+                                       element = {<Profile/>}>
+                                    <Route path="edit-profile"
+                                        element = {<EditProfile/>}/>
+                                </Route>
+                            </Route>
+                        </Route>
+                    </Routes>
+                </div>
+            </BrowserRouter>
     );
 }
 
