@@ -6,7 +6,8 @@ import './vendors/fontawesome/fontawesome-free-5.15.4-web/css/all.css';
 import HelloWorld from "./components/hello-world"
 import Labs from "./components/Labs/index";
 import Index from "./components/Tuiter/index";
-import HomeScreen from "./components/Tuiter/HomeScreen/homescreen";
+// import HomeScreen from "./components/Tuiter/HomeScreen/homescreen";
+import HomeScreen from "./components/Tuiter/home-screen"
 import ExploreScreen from "./components/Tuiter/ExploreScreen/explorescreen"
 import Profile from "./components/Tuiter/Profile/index"
 import EditProfile from "./components/Tuiter/EditProfile"
