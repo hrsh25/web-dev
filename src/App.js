@@ -30,10 +30,9 @@ function App() {
                                 <Route path = "explore"
                                        element = {<ExploreScreen/>}/>
                                 <Route path = "profile"
-                                       element = {<Profile/>}>
-                                    <Route path="edit-profile"
+                                       element = {<Profile/>}/>
+                                <Route path="edit-profile"
                                         element = {<EditProfile/>}/>
-                                </Route>
                             </Route>
                         </Route>
                     </Routes>

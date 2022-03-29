@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
 import "../Profile/profile.css"
 
@@ -12,7 +11,7 @@ const ProfileComponent = ({profile}) => {
                     <i className="fas fa-arrow-left wd-color-white"></i>
                 </div>
                 <div className="col-11 ps-2">
-                    <label className="wd-color-white"><b>{profile.firstName} {profile.lastName}</b></label>
+                    <label className="wd-color-white"><b>{profile.name}</b></label>
                     <br></br>
                     <label className="wd-font">1000 Tweets</label>
                 </div>
@@ -21,14 +20,14 @@ const ProfileComponent = ({profile}) => {
                 <img src={profile.bannerPicture} className="wd-main"></img>
                 <img src={profile.profilePicture} className="rounded-pill wd-border-black wd-overlay"></img>
                 <button type="button" className="btn rounded-pill wd-right border-secondary mt-3 me-3"
-                        onClick={() => navigate("/tuiter/profile/edit-profile")}>Edit Profile
+                        onClick={() => navigate("/tuiter/edit-profile")}>Edit Profile
                 </button>
 
             </div>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
             <div className="ms-3">
-                <label className="wd-username-font wd-color-white"><b>{profile.firstName} {profile.lastName}</b></label>
+                <label className="wd-username-font wd-color-white"><b>{profile.name}</b></label>
                 <br></br>
                 <label>@{profile.handle}</label>
                 <label className="wd-color-white">{profile.bio}</label>

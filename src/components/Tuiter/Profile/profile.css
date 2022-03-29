@@ -25,3 +25,15 @@
 .wd-right {
     float: right;
 }
+
+.wd-save {
+    background-color: white;
+}
+
+.wd-color-black {
+    color: black;
+}
+
+.btn:hover{
+    color:black !important;
+}
