@@ -54,7 +54,7 @@ const TuitListItem = ({tuit}) => {
                             <i onClick={() => updateTuit(dispatch, {
                                 ...tuit,
                                 dislikes: tuit.dislikes + 1
-                            })} className="far fa-thumbs-up ms-3 me-2"></i>
+                            })} className="far fa-thumbs-down ms-3 me-2"></i>
                         </label>
                         <i className="fas fa-external-link-alt ps-4"></i>
                     </div>
